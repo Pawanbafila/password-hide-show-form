@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+<h1>Log in</h1>
+        <input type="email" placeholder="Enter email">
+        
+        <input type="password" placeholder="Password" class="pass">
+        <i class="fa-solid fa-eye first" onclick="fun()"></i>
+        <i class="fa-solid fa-eye-slash two" onclick="fun()"></i>
+        
+        <button >Submit</button>
+
+    </form>
+
+    <script>
+var pass = document.querySelector('.pass');
+var off = document.querySelector('.two');
+var on = document.querySelector('.first')
+
+function fun(){
+    if(pass.type === "password"){
+        pass.type = "text"
+        off.style = "display:block"
+        on.style = "display:none"
+    }else{
+        pass.type = "password"
+        on.style = "display:block"
+        off.style = "display:none"
+    }
+    
+  
+}
+
+    </script>
+</body>
+</html>
